@@ -1,0 +1,480 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+.menuwrap {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+}
+
+.menuwrap .ant-menu-horizontal {
+    border-bottom: none;
+}
+
+.menuwrap .ant-menu-horizontal .ant-menu-item {
+    color: #000;
+}
+
+.menuwrap .ant-menu-horizontal .ant-menu-item-selected {
+    color: #fff;
+    font-weight: bold;
+}
+
+.menuwrap .ant-menu-horizontal .ant-menu-item-selected {
+    background: #1E90FF;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+    background: #1E90FF;
+}
+
+.slidewrap {
+    margin-top: 52px;
+}
+
+.indexlistwrap {
+    box-sizing: border-box;
+    background: rgba(232, 223, 223, 0.1);
+    padding-bottom: 15px;
+}
+
+.indexlistwrap .ant-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+}
+
+.indexlistwrap .ant-list-item-meta-description {
+    color: rgba(0, 0, 0, .5);
+    width: 100%;
+    height: 22px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    /* display: inline-block; */
+}
+
+.indexlistwrap .ant-list-item {
+    background-color: rgba(244, 241, 241, 0.2);
+    padding: 10px 15px;
+    margin-bottom: 20px;
+}
+
+.indexlistwrap .ant-list-item-meta-title>a {
+    color: #000;
+    font-size: 16px;
+}
+
+.indexlistwrap p {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #1E90FF;
+    line-height: 25px;
+}
+
+.indexlistwrap .ant-list-split .ant-list-item {
+    border: none
+}
+
+
+/* 歌手页 */
+
+.singerwrap {
+    margin-top: 51px;
+    background: rgba(232, 223, 223, 0.3);
+    padding-bottom: 15px;
+}
+
+.singerwrap .ant-list-item-meta-title {
+    line-height: 50px;
+    font-size: 16px;
+    color: #000;
+}
+
+.singerwrap .ant-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.singerwrap .ant-list-split .ant-list-item {
+    border: none;
+    margin-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #fff;
+}
+
+.singerwrap .ant-list-split .ant-list-item:first-child {
+    margin-top: 0
+}
+
+.singerwrap .ant-list-header h3 {
+    text-align: center;
+    font-size: 14px;
+    color: #1E90FF;
+}
+
+
+/* 排行榜 */
+
+.rankwrap {
+    margin-top: 51px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+
+/* 详情页 */
+
+.detailwrap {
+    position: relative;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    background-color: #fff;
+    min-height: 51px;
+}
+
+.detailwrap .songlistbg {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.detailwrap .songlistbg img {
+    width: 100%;
+}
+
+.detailwrap .navwrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 36px;
+    width: 100%;
+    z-index: 2;
+}
+
+.detailwrap .navwrap .listtitle {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    line-height: 36px;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.detailwrap button {
+    background: transparent;
+    outline: none;
+    border: none;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    margin-left: 6px;
+    position: absolute;
+}
+
+.detailwrap .songlistbg button {
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    left: 50%;
+    bottom: 50px;
+    margin-left: -70px;
+    border: 1px solid #1E90FF;
+    font-size: 18px;
+    border-radius: 20px;
+    color: #1E90FF;
+}
+
+.detailwrap .songlistbg button:hover {
+    border-radius: 20px;
+    outline: none;
+}
+
+.detailwrap .songlistwrap {
+    position: relative;
+}
+
+.detailwrap .songlistbg .desc {
+    box-sizing: border-box;
+    padding: 10px 25px;
+    color: #fff;
+    position: absolute;
+    top: 51px;
+    width: 100%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* white-space: nowrap; */
+    word-break: break-all;
+    height: 92px;
+}
+
+.detailwrap .songlistwrap .ant-list-item {
+    padding-left: 20px;
+}
+
+.detailwrap .songlistwrap .ant-list-item .ant-list-item-meta .ant-list-item-meta-title {
+    color: rgba(0, 0, 0, .8);
+    font-size: 16px
+}
+
+.detailwrap .songlistwrap .ant-list-item .ant-list-item-meta ..ant-list-item-meta-description {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    margin-top: 4px;
+    color: rgba(0, 0, 0, .6);
+}
+
+
+/* 播放器 */
+
+.playwrap {
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 3;
+    background: #fff;
+    height: 100vh;
+    top: 0;
+    width: 100vw;
+    overflow: hidden;
+    left: 0;
+    width: 100%;
+    background-size: 100% 100%;
+}
+
+.playwrap .lrcwrap {
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    text-align: center;
+    width: 100%;
+    height: 360px;
+    overflow-y: auto;
+    transition: all .5s;
+    color: #000;
+}
+
+.playwrap .lrcwrap li {
+    height: 30px;
+    line-height: 30px;
+}
+
+.playwrap .playAudio {
+    box-sizing: border-box;
+    position: absolute;
+    top: 550px;
+    text-align: center;
+    width: 100%;
+}
+
+.playwrap .playAudio .btnGrounp {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.playwrap .playAudio .btnGrounp span {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #1E90FF;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.playwrap .process {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    padding: 10px 20px;
+    top: 490px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.playwrap .process .container {
+    box-sizing: border-box;
+    position: absolute;
+    height: 4px;
+    width: 70vw;
+    border-radius: 2px;
+    background: #000;
+    display: flex;
+    align-items: center;
+}
+
+.playwrap .process .container .startTime {
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    font-size: 10px;
+    right: 70vw;
+    text-align: center;
+}
+
+.playwrap .process .container .stopTime {
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    font-size: 10px;
+    left: 70vw;
+    text-align: center;
+}
+
+.playwrap .process .container .currentTime {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: cadetblue;
+    display: flex;
+    align-items: center;
+}
+
+.playwrap .process .container .currentTime .dot {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: block;
+    background: lightblue;
+    left: 100%
+}
+
+.playwrap::before {
+    content: '';
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(205, 245, 247, 0.23);
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    font-size: 0;
+    padding: 0;
+    border: 0;
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+}
+
+.playwrap .navwrap {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    /* background: lightblue */
+}
+
+.playwrap .navwrap button {
+    position: absolute;
+    left: 5px;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+
+.playwrap .navwrap .songName {
+    position: absolute;
+    text-align: center;
+    color: #000;
+    width: 100%;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.playwrap .navwrap .author {
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.searchwrap {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    background-color: #fff;
+    margin-top: 51px;
+    box-sizing: border-box;
+    padding: 10px 15px;
+}
+
+.searchwrap .result {
+    margin-top: 20px;
+    height: 74vh;
+    overflow: scroll;
+}
+
+.searchwrap .result .listwrap {
+    overflow-y: scroll
+}
+
+.miniplay {
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    background: #1E90FF;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    z-index: 99;
+}
+
+.miniplay img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    animation: rota 2s infinite linear
+}
+
+@keyframes rota {
+    from {
+        transform: rotate(0deg)
+    }
+    50% {
+        transform: rotate(180deg)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
